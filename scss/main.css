@@ -13,9 +13,49 @@ body {
           box-sizing: border-box;
   padding: 0.5in;
   width: 8.5in;
-  height: 11in;
+  height: 12in;
   background-color: whitesmoke;
   -webkit-box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
           box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+}
+
+.parent {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.titleHeader {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 1 / 1 / 2 / 6;
+  border: #0400ff 1px solid;
+}
+
+.leftSummary {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 2 / 1 / 6 / 4;
+  border: magenta 1px solid;
+}
+
+.rightInfo {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: 2 / 4 / 6 / 6;
+  border: red 1px solid;
 }
 /*# sourceMappingURL=main.css.map */
