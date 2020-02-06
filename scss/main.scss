@@ -16,7 +16,7 @@ body {
   background-color: whitesmoke;
   box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
 }
-.parent {
+.gridParent {
   width: 100%;
   height: 100%;
   display: grid;
@@ -24,18 +24,35 @@ body {
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  // border: rgb(30, 255, 0) 1px solid;
 }
 
 .titleHeader {
   grid-area: 1 / 1 / 2 / 6;
   border: rgb(4, 0, 255) 1px solid;
+  h1 {
+    font-family: "Poiret One", cursive;
+    font-size: 100px;
+  }
 }
 .leftSummary {
   grid-area: 2 / 1 / 6 / 4;
   border: rgb(255, 0, 255) 1px solid;
+  h1 {
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
 }
 .rightInfo {
   grid-area: 2 / 4 / 6 / 6;
   border: rgb(255, 0, 0) 1px solid;
+  h1 {
+    font-family: "Poiret One", cursive;
+    font-size: 30px;
+  }
+  p {
+    font-size: 16px;
+  }
 }

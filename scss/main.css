@@ -19,7 +19,7 @@ body {
           box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
 }
 
-.parent {
+.gridParent {
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -41,6 +41,11 @@ body {
   border: #0400ff 1px solid;
 }
 
+.titleHeader h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 100px;
+}
+
 .leftSummary {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
@@ -50,6 +55,15 @@ body {
   border: magenta 1px solid;
 }
 
+.leftSummary h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+}
+
+.leftSummary p {
+  font-size: 16px;
+}
+
 .rightInfo {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
@@ -57,5 +71,14 @@ body {
   -ms-grid-column-span: 2;
   grid-area: 2 / 4 / 6 / 6;
   border: red 1px solid;
+}
+
+.rightInfo h1 {
+  font-family: "Poiret One", cursive;
+  font-size: 30px;
+}
+
+.rightInfo p {
+  font-size: 16px;
 }
 /*# sourceMappingURL=main.css.map */
