@@ -62,6 +62,8 @@ body {
 
 .leftSummary p {
   font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+  margin: 5px;
 }
 
 .rightInfo {
@@ -70,7 +72,6 @@ body {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: 2 / 4 / 6 / 6;
-  border: red 1px solid;
 }
 
 .rightInfo h1 {
@@ -80,5 +81,11 @@ body {
 
 .rightInfo p {
   font-size: 16px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.rightInfo li {
+  list-style-type: lower-alpha;
+  list-style-position: inside;
 }
 /*# sourceMappingURL=main.css.map */

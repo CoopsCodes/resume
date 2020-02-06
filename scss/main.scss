@@ -43,16 +43,23 @@ body {
   }
   p {
     font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+    margin: 5px;
   }
 }
 .rightInfo {
   grid-area: 2 / 4 / 6 / 6;
-  border: rgb(255, 0, 0) 1px solid;
+  // border: rgb(255, 0, 0) 1px solid;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 30px;
   }
   p {
     font-size: 16px;
+    font-family: "Quicksand", sans-serif;
+  }
+  li {
+    list-style-type: lower-alpha;
+    list-style-position: inside;
   }
 }
