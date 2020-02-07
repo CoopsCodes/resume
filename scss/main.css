@@ -85,7 +85,7 @@ body {
 }
 
 .rightInfo li {
-  list-style-type: lower-alpha;
+  list-style-type: circle;
   list-style-position: inside;
 }
 /*# sourceMappingURL=main.css.map */
