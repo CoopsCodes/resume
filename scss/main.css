@@ -48,7 +48,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: yellowgreen;
+  border-bottom: yellowgreen 1px solid;
 }
 
 .titleHeader h1 {
@@ -60,7 +60,7 @@ body {
 .titleHeader h3 {
   font-family: "Quicksand", sans-serif;
   text-align: right;
-  padding-right: 80px;
+  padding-right: 60px;
 }
 
 .leftSummary {
@@ -69,7 +69,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 2 / 1 / 6 / 4;
-  border-right: yellowgreen 2px solid;
+  border-right: yellowgreen 1px solid;
 }
 
 .leftSummary h1 {
@@ -89,6 +89,16 @@ body {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: 2 / 4 / 6 / 6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-left: 10px;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
