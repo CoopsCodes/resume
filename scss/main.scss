@@ -28,15 +28,26 @@ body {
 
 .titleHeader {
   grid-area: 1 / 1 / 2 / 6;
-  border: rgb(4, 0, 255) 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: yellowgreen;
+  // border: rgb(4, 0, 255) 1px solid;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 100px;
+    padding-left: 20px;
+  }
+  h3 {
+    font-family: "Quicksand", sans-serif;
+    text-align: right;
+    padding-right: 80px;
   }
 }
 .leftSummary {
   grid-area: 2 / 1 / 6 / 4;
-  border: rgb(255, 0, 255) 1px solid;
+  // border: rgb(255, 0, 255) 1px solid;
+  border-right: yellowgreen 2px solid;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 30px;
@@ -50,16 +61,19 @@ body {
 .rightInfo {
   grid-area: 2 / 4 / 6 / 6;
   // border: rgb(255, 0, 0) 1px solid;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 30px;
   }
   p {
-    font-size: 16px;
-    font-family: "Quicksand", sans-serif;
+    margin: 10px;
   }
   li {
     list-style-type: circle;
     list-style-position: inside;
+    margin: 10px;
   }
 }

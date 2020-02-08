@@ -38,12 +38,29 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 5;
   grid-area: 1 / 1 / 2 / 6;
-  border: #0400ff 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: yellowgreen;
 }
 
 .titleHeader h1 {
   font-family: "Poiret One", cursive;
   font-size: 100px;
+  padding-left: 20px;
+}
+
+.titleHeader h3 {
+  font-family: "Quicksand", sans-serif;
+  text-align: right;
+  padding-right: 80px;
 }
 
 .leftSummary {
@@ -52,7 +69,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 2 / 1 / 6 / 4;
-  border: magenta 1px solid;
+  border-right: yellowgreen 2px solid;
 }
 
 .leftSummary h1 {
@@ -72,6 +89,9 @@ body {
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: 2 / 4 / 6 / 6;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
 }
 
 .rightInfo h1 {
@@ -80,12 +100,12 @@ body {
 }
 
 .rightInfo p {
-  font-size: 16px;
-  font-family: "Quicksand", sans-serif;
+  margin: 10px;
 }
 
 .rightInfo li {
   list-style-type: circle;
   list-style-position: inside;
+  margin: 10px;
 }
 /*# sourceMappingURL=main.css.map */
