@@ -44,7 +44,7 @@ body {
 .resumeCanvas {
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0.5in;
+  padding: 0.3in;
   width: 8.5in;
   height: 12in;
   background-color: rgb(250, 255, 255);
@@ -54,7 +54,7 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr) 255px;
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
@@ -80,7 +80,7 @@ body {
   }
 }
 .leftSummary {
-  grid-area: 2 / 1 / 6 / 4;
+  grid-area: 2 / 1 / 6 / 5;
   border-right: $border-colour 1px solid;
   font-family: "Quicksand", sans-serif;
   h1 {
@@ -103,11 +103,11 @@ body {
 }
 .rightInfo {
   @include hoverColours;
-  grid-area: 2 / 4 / 6 / 6;
+  grid-area: 2 / 5 / 6 / 6;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-left: 10px;
+  margin-left: 3px;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
   h1 {

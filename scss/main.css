@@ -16,7 +16,7 @@ body a:visited {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.5in;
+  padding: 0.3in;
   width: 8.5in;
   height: 12in;
   background-color: #faffff;
@@ -29,8 +29,8 @@ body a:visited {
   height: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-columns: (1fr)[4] 255px;
+      grid-template-columns: repeat(4, 1fr) 255px;
   -ms-grid-rows: (1fr)[5];
       grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
@@ -97,8 +97,8 @@ body a:visited {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: 2 / 1 / 6 / 4;
+  -ms-grid-column-span: 4;
+  grid-area: 2 / 1 / 6 / 5;
   border-right: #2d0081 1px solid;
   font-family: "Quicksand", sans-serif;
 }
@@ -127,9 +127,9 @@ body a:visited {
 .rightInfo {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 2;
-  grid-area: 2 / 4 / 6 / 6;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-area: 2 / 5 / 6 / 6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +140,7 @@ body a:visited {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-left: 10px;
+  margin-left: 3px;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
