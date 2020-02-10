@@ -111,6 +111,7 @@ body {
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
   h1 {
+    text-align: right;
     font-family: "Poiret One", cursive;
     font-size: 30px;
     color: $heading-colour;
@@ -126,8 +127,5 @@ body {
   a:link,
   a:visited {
     color: black;
-  }
-  a:hover {
-    color: rgb(99, 148, 238);
   }
 }

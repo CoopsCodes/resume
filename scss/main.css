@@ -170,6 +170,7 @@ body a:visited {
 }
 
 .rightInfo h1 {
+  text-align: right;
   font-family: "Poiret One", cursive;
   font-size: 30px;
   color: #14003d;
@@ -188,9 +189,5 @@ body a:visited {
 .rightInfo a:link,
 .rightInfo a:visited {
   color: black;
-}
-
-.rightInfo a:hover {
-  color: #6394ee;
 }
 /*# sourceMappingURL=main.css.map */
