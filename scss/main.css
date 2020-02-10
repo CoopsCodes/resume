@@ -71,32 +71,32 @@ body a:visited {
 
 .titleHeader .name1:hover,
 .titleHeader .name8:hover {
-  color: red;
+  color: #e40303;
 }
 
 .titleHeader .name2:hover,
 .titleHeader .name9:hover {
-  color: orange;
+  color: darkorange;
 }
 
 .titleHeader .name3:hover,
 .titleHeader .name10:hover {
-  color: yellow;
+  color: #ffed00;
 }
 
 .titleHeader .name4:hover,
 .titleHeader .name11:hover {
-  color: green;
+  color: #008026;
 }
 
 .titleHeader .name5:hover,
 .titleHeader .name12:hover {
-  color: blue;
+  color: #004dff;
 }
 
 .titleHeader .name6:hover,
 .titleHeader .name13:hover {
-  color: purple;
+  color: #750787;
 }
 
 .leftSummary {
