@@ -81,6 +81,9 @@ body {
 }
 .leftSummary {
   grid-area: 2 / 1 / 6 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   border-right: $border-colour 1px solid;
   font-family: "Quicksand", sans-serif;
   h1 {
