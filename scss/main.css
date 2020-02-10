@@ -4,7 +4,12 @@
 }
 
 body {
-  background: lightgray;
+  background: white;
+}
+
+body a:link,
+body a:visited {
+  text-decoration: none;
 }
 
 .resumeCanvas {
@@ -14,7 +19,7 @@ body {
   padding: 0.5in;
   width: 8.5in;
   height: 12in;
-  background-color: whitesmoke;
+  background-color: #faffff;
   -webkit-box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
           box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
 }
@@ -48,13 +53,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: yellowgreen 1px solid;
+  border-bottom: #2d0081 1px solid;
 }
 
 .titleHeader h1 {
   font-family: "Poiret One", cursive;
   font-size: 100px;
   padding-left: 20px;
+  color: #14003d;
 }
 
 .titleHeader h3 {
@@ -63,24 +69,63 @@ body {
   padding-right: 60px;
 }
 
+.titleHeader .name1:hover,
+.titleHeader .name8:hover {
+  color: red;
+}
+
+.titleHeader .name2:hover,
+.titleHeader .name9:hover {
+  color: orange;
+}
+
+.titleHeader .name3:hover,
+.titleHeader .name10:hover {
+  color: yellow;
+}
+
+.titleHeader .name4:hover,
+.titleHeader .name11:hover {
+  color: green;
+}
+
+.titleHeader .name5:hover,
+.titleHeader .name12:hover {
+  color: blue;
+}
+
+.titleHeader .name6:hover,
+.titleHeader .name13:hover {
+  color: purple;
+}
+
 .leftSummary {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: 2 / 1 / 6 / 4;
-  border-right: yellowgreen 1px solid;
+  border-right: #2d0081 1px solid;
+  font-family: "Quicksand", sans-serif;
 }
 
 .leftSummary h1 {
   font-family: "Poiret One", cursive;
   font-size: 30px;
+  color: #14003d;
+}
+
+.leftSummary h4 {
+  text-decoration: underline;
 }
 
 .leftSummary p {
   font-size: 16px;
-  font-family: "Quicksand", sans-serif;
   margin: 5px;
+}
+
+.leftSummary .bioIntro p {
+  text-align: center;
 }
 
 .rightInfo {
@@ -107,6 +152,7 @@ body {
 .rightInfo h1 {
   font-family: "Poiret One", cursive;
   font-size: 30px;
+  color: #14003d;
 }
 
 .rightInfo p {
@@ -117,5 +163,14 @@ body {
   list-style-type: circle;
   list-style-position: inside;
   margin: 10px;
+}
+
+.rightInfo a:link,
+.rightInfo a:visited {
+  color: black;
+}
+
+.rightInfo a:hover {
+  color: #6394ee;
 }
 /*# sourceMappingURL=main.css.map */

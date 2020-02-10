@@ -3,8 +3,21 @@
   padding: 0;
 }
 
+$border-colour: rgb(45, 0, 129);
+$heading-colour: rgb(20, 0, 61);
+$red: red;
+$orange: orange;
+$yellow: yellow;
+$green: green;
+$blue: blue;
+$purple: purple;
+
 body {
-  background: lightgray;
+  background: rgb(255, 255, 255);
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
 }
 
 .resumeCanvas {
@@ -13,7 +26,7 @@ body {
   padding: 0.5in;
   width: 8.5in;
   height: 12in;
-  background-color: whitesmoke;
+  background-color: rgb(250, 255, 255);
   box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
 }
 .gridParent {
@@ -31,31 +44,63 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-bottom: yellowgreen 1px solid;
-  // border: rgb(4, 0, 255) 1px solid;
+  border-bottom: $border-colour 1px solid;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 100px;
     padding-left: 20px;
+    color: $heading-colour;
   }
   h3 {
     font-family: "Quicksand", sans-serif;
     text-align: right;
     padding-right: 60px;
   }
+  .name1:hover,
+  .name8:hover {
+    color: $red;
+  }
+  .name2:hover,
+  .name9:hover {
+    color: $orange;
+  }
+  .name3:hover,
+  .name10:hover {
+    color: $yellow;
+  }
+  .name4:hover,
+  .name11:hover {
+    color: $green;
+  }
+  .name5:hover,
+  .name12:hover {
+    color: $blue;
+  }
+  .name6:hover,
+  .name13:hover {
+    color: $purple;
+  }
 }
 .leftSummary {
   grid-area: 2 / 1 / 6 / 4;
-  // border: rgb(255, 0, 255) 1px solid;
-  border-right: yellowgreen 1px solid;
+  border-right: $border-colour 1px solid;
+  font-family: "Quicksand", sans-serif;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 30px;
+    color: $heading-colour;
+  }
+  h4 {
+    text-decoration: underline;
   }
   p {
     font-size: 16px;
-    font-family: "Quicksand", sans-serif;
     margin: 5px;
+  }
+  .bioIntro {
+    p {
+      text-align: center;
+    }
   }
 }
 .rightInfo {
@@ -63,13 +108,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  // border: rgb(255, 0, 0) 1px solid;
   margin-left: 10px;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
   h1 {
     font-family: "Poiret One", cursive;
     font-size: 30px;
+    color: $heading-colour;
   }
   p {
     margin: 10px;
@@ -78,5 +123,12 @@ body {
     list-style-type: circle;
     list-style-position: inside;
     margin: 10px;
+  }
+  a:link,
+  a:visited {
+    color: black;
+  }
+  a:hover {
+    color: rgb(99, 148, 238);
   }
 }
