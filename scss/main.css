@@ -56,6 +56,30 @@ body a:visited {
   border-bottom: #2d0081 1px solid;
 }
 
+.titleHeader .red1:hover {
+  color: #e40303;
+}
+
+.titleHeader .orange2:hover {
+  color: darkorange;
+}
+
+.titleHeader .yellow3:hover {
+  color: #ffed00;
+}
+
+.titleHeader .green4:hover {
+  color: #008026;
+}
+
+.titleHeader .blue5:hover {
+  color: #004dff;
+}
+
+.titleHeader .purple6:hover {
+  color: #750787;
+}
+
 .titleHeader h1 {
   font-family: "Poiret One", cursive;
   font-size: 100px;
@@ -69,36 +93,6 @@ body a:visited {
   padding-right: 60px;
 }
 
-.titleHeader .name1:hover,
-.titleHeader .name8:hover {
-  color: #e40303;
-}
-
-.titleHeader .name2:hover,
-.titleHeader .name9:hover {
-  color: darkorange;
-}
-
-.titleHeader .name3:hover,
-.titleHeader .name10:hover {
-  color: #ffed00;
-}
-
-.titleHeader .name4:hover,
-.titleHeader .name11:hover {
-  color: #008026;
-}
-
-.titleHeader .name5:hover,
-.titleHeader .name12:hover {
-  color: #004dff;
-}
-
-.titleHeader .name6:hover,
-.titleHeader .name13:hover {
-  color: #750787;
-}
-
 .leftSummary {
   -ms-grid-row: 2;
   -ms-grid-row-span: 4;
@@ -110,22 +104,24 @@ body a:visited {
 }
 
 .leftSummary h1 {
+  margin: 5px 0 5px 0;
   font-family: "Poiret One", cursive;
   font-size: 30px;
   color: #14003d;
 }
 
 .leftSummary h4 {
+  margin-bottom: 5px;
   text-decoration: underline;
+}
+
+.leftSummary h5 {
+  font-style: italic;
 }
 
 .leftSummary p {
   font-size: 16px;
   margin: 5px;
-}
-
-.leftSummary .bioIntro p {
-  text-align: center;
 }
 
 .rightInfo {
@@ -147,6 +143,30 @@ body a:visited {
   margin-left: 10px;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
+}
+
+.rightInfo .red1:hover {
+  color: #e40303;
+}
+
+.rightInfo .orange2:hover {
+  color: darkorange;
+}
+
+.rightInfo .yellow3:hover {
+  color: #ffed00;
+}
+
+.rightInfo .green4:hover {
+  color: #008026;
+}
+
+.rightInfo .blue5:hover {
+  color: #004dff;
+}
+
+.rightInfo .purple6:hover {
+  color: #750787;
 }
 
 .rightInfo h1 {

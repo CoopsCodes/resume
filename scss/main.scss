@@ -12,6 +12,27 @@ $green: rgb(0, 128, 38);
 $blue: rgb(0, 77, 255);
 $purple: rgb(117, 7, 135);
 
+@mixin hoverColours {
+  .red1:hover {
+    color: $red;
+  }
+  .orange2:hover {
+    color: $orange;
+  }
+  .yellow3:hover {
+    color: $yellow;
+  }
+  .green4:hover {
+    color: $green;
+  }
+  .blue5:hover {
+    color: $blue;
+  }
+  .purple6:hover {
+    color: $purple;
+  }
+}
+
 body {
   background: rgb(255, 255, 255);
   a:link,
@@ -40,6 +61,7 @@ body {
 }
 
 .titleHeader {
+  @include hoverColours;
   grid-area: 1 / 1 / 2 / 6;
   display: flex;
   flex-direction: column;
@@ -56,54 +78,31 @@ body {
     text-align: right;
     padding-right: 60px;
   }
-  .name1:hover,
-  .name8:hover {
-    color: $red;
-  }
-  .name2:hover,
-  .name9:hover {
-    color: $orange;
-  }
-  .name3:hover,
-  .name10:hover {
-    color: $yellow;
-  }
-  .name4:hover,
-  .name11:hover {
-    color: $green;
-  }
-  .name5:hover,
-  .name12:hover {
-    color: $blue;
-  }
-  .name6:hover,
-  .name13:hover {
-    color: $purple;
-  }
 }
 .leftSummary {
   grid-area: 2 / 1 / 6 / 4;
   border-right: $border-colour 1px solid;
   font-family: "Quicksand", sans-serif;
   h1 {
+    margin: 5px 0 5px 0;
     font-family: "Poiret One", cursive;
     font-size: 30px;
     color: $heading-colour;
   }
   h4 {
+    margin-bottom: 5px;
     text-decoration: underline;
+  }
+  h5 {
+    font-style: italic;
   }
   p {
     font-size: 16px;
     margin: 5px;
   }
-  .bioIntro {
-    p {
-      text-align: center;
-    }
-  }
 }
 .rightInfo {
+  @include hoverColours;
   grid-area: 2 / 4 / 6 / 6;
   display: flex;
   flex-direction: column;
