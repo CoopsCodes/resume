@@ -4,9 +4,8 @@
 }
 
 body {
-  background: white;
+  background: rgb(255, 255, 255);
 }
-
 body a:link,
 body a:visited {
   text-decoration: none;
@@ -14,79 +13,55 @@ body a:visited {
 
 .resumeCanvas {
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0.3in;
   width: 8.5in;
   height: 12in;
-  background-color: #faffff;
-  -webkit-box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
+  background-color: rgb(250, 255, 255);
+  box-shadow: 0 3px 8px -3px rgba(0, 0, 0, 0.7);
 }
 
 .gridParent {
   width: 100%;
   height: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4] 255px;
-      grid-template-columns: repeat(4, 1fr) 255px;
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr) 255px;
+  grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
 .titleHeader {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 5;
-  grid-area: 1 / 1 / 2 / 6;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-area: 1/1/2/6;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-bottom: #2d0081 1px solid;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: rgb(45, 0, 129) 1px solid;
 }
-
 .titleHeader .red1:hover {
-  color: #e40303;
+  color: rgb(228, 3, 3);
 }
-
 .titleHeader .orange2:hover {
-  color: darkorange;
+  color: rgb(255, 140, 0);
 }
-
 .titleHeader .yellow3:hover {
-  color: #ffed00;
+  color: rgb(255, 237, 0);
 }
-
 .titleHeader .green4:hover {
-  color: #008026;
+  color: rgb(0, 128, 38);
 }
-
 .titleHeader .blue5:hover {
-  color: #004dff;
+  color: rgb(0, 77, 255);
 }
-
 .titleHeader .purple6:hover {
-  color: #750787;
+  color: rgb(117, 7, 135);
 }
-
 .titleHeader h1 {
   font-family: "Poiret One", cursive;
   font-size: 100px;
   padding-left: 20px;
-  color: #14003d;
+  color: rgb(20, 0, 61);
 }
-
 .titleHeader h3 {
   font-family: "Quicksand", sans-serif;
   text-align: right;
@@ -94,110 +69,73 @@ body a:visited {
 }
 
 .leftSummary {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-area: 2 / 1 / 6 / 5;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-area: 2/1/6/5;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  border-right: #2d0081 1px solid;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: rgb(45, 0, 129) 1px solid;
   font-family: "Quicksand", sans-serif;
 }
-
 .leftSummary h1 {
   margin: 5px 0 5px 0;
   font-family: "Poiret One", cursive;
   font-size: 30px;
-  color: #14003d;
+  color: rgb(20, 0, 61);
 }
-
 .leftSummary h4 {
   margin-bottom: 5px;
   text-decoration: underline;
 }
-
 .leftSummary h5 {
   font-style: italic;
 }
-
 .leftSummary p {
   font-size: 16px;
   margin: 5px;
 }
 
 .rightInfo {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 4;
-  -ms-grid-column: 5;
-  -ms-grid-column-span: 1;
-  grid-area: 2 / 5 / 6 / 6;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  grid-area: 2/5/6/6;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-evenly;
   margin-left: 3px;
   font-size: 16px;
   font-family: "Quicksand", sans-serif;
 }
-
 .rightInfo .red1:hover {
-  color: #e40303;
+  color: rgb(228, 3, 3);
 }
-
 .rightInfo .orange2:hover {
-  color: darkorange;
+  color: rgb(255, 140, 0);
 }
-
 .rightInfo .yellow3:hover {
-  color: #ffed00;
+  color: rgb(255, 237, 0);
 }
-
 .rightInfo .green4:hover {
-  color: #008026;
+  color: rgb(0, 128, 38);
 }
-
 .rightInfo .blue5:hover {
-  color: #004dff;
+  color: rgb(0, 77, 255);
 }
-
 .rightInfo .purple6:hover {
-  color: #750787;
+  color: rgb(117, 7, 135);
 }
-
 .rightInfo h1 {
   text-align: right;
   font-family: "Poiret One", cursive;
   font-size: 30px;
-  color: #14003d;
+  color: rgb(20, 0, 61);
 }
-
 .rightInfo p {
   margin: 10px;
 }
-
 .rightInfo li {
   list-style-type: circle;
   list-style-position: inside;
   margin: 10px;
 }
-
 .rightInfo a:link,
 .rightInfo a:visited {
   color: black;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
